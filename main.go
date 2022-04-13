@@ -14,7 +14,6 @@ import (
 const (
 	tracer = "DDL_Tracer"
 	version = "0.1.1"
-	author = "DBA"
 	slackFormat = "Server: *%s* (%s)\nSchema : *%s* \nTarget : *%s*\n*Information* :\n%s \n"
 	initSlackFormat ="Server: *%s*\nStatus : *%s*\nDescription : *%s*\n"
 )
@@ -80,7 +79,7 @@ func main(){
 			// Init Complete Send Msg
 			var msg string
 			if err != nil {
-				msg = fmt.Sprintf(initSlackFormat,version,author,servers.Alias,"Errors",err)
+				msg = fmt.Sprintf(initSlackFormat,servers.Alias,"Errors",err)
 			} else {
 				msg = fmt.Sprintf(initSlackFormat,servers.Alias,"Complete","Definition Initialize Complete.")
 			}
