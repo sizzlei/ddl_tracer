@@ -82,3 +82,5 @@ INFO[0000] Setup Host Path : /data/ddl_trace/testdb
 
 - Initialize / Check 수행시에는 설정된 Webhook으로 알림이 발송됩니다. 
 - Rename(Column, Table)은 추적이 불가능하며 Dropped / Added로 2건 발생합니다. 
+- 현재 기본 릴리즈는 AWS EC2(arm64)를 기준으로 컴파일 되었습니다.
+- 필요에 따라 크로스컴파일을 통해 원하는 OS에서 수행가능합니다. 
