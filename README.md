@@ -63,6 +63,7 @@ INFO[0000] Regist tracer : DDL_Tracer Version : 0.1.0
 INFO[0000] Password Encrypt Complete : bPDLd0lssjqxyOPSfwgAMQ== 
 ```
 > 암호화 키는 소스내에 존재합니다. `lib/crypto.go`
+> 사용전 암호화키를 변경하여 컴파일 후 사용하시는 것을 추천 드립니다.
 
 ### Initialize
 DDL Tracer를 초기화 하는것으로 작성된 서버 및 스키마에 대한 정보를 파일구조로 최초 저장합니다. 
