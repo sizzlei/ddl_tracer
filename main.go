@@ -13,7 +13,7 @@ import (
 
 const (
 	tracer = "DDL_Tracer"
-	version = "0.1.0"
+	version = "0.1.1"
 	author = "DBA"
 	slackFormat = "Server: *%s* (%s)\nSchema : *%s* \nTarget : *%s*\n*Information* :\n%s \n"
 	initSlackFormat ="Server: *%s*\nStatus : *%s*\nDescription : *%s*\n"
