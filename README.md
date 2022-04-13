@@ -29,7 +29,7 @@ total 0
 ```yaml
 tracker:
   user: 
-  password:  # 개발
+  password:  (암호화된 패스워드)
   datapath: /data/ddl_tracer
   webhook_url: 
   tableddl : false
