@@ -84,3 +84,9 @@ INFO[0000] Setup Host Path : /data/ddl_trace/testdb
 - Rename(Column, Table)은 추적이 불가능하며 Dropped / Added로 2건 발생합니다. 
 - 현재 기본 릴리즈는 AWS EC2(arm64)를 기준으로 컴파일 되었습니다.
 - 필요에 따라 크로스컴파일을 통해 원하는 OS에서 수행가능합니다. 
+
+## Crontab 
+적용시에는 별도의 서버 또는 EC2가 필요하며 아래와 같이 Crontab을 설정하여 적용합니다. 
+```
+*/10 * * * * user /app/ddl_tracer -opt=check -conf=./config.yml
+```
