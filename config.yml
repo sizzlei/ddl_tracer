@@ -1,0 +1,12 @@
+tracker:
+  user: 
+  password:  # 개발
+  datapath: /data/ddl_tracer
+  webhook_url: 
+  tableddl : false
+
+servers:
+  - alias: testDB
+    host: testdb.endpoint
+    port: 3306
+    db: ["test"]
